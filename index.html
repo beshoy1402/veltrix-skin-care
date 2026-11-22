@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f3ed">
+<title>VELTRIX — Skincare E-commerce Proposal</title>
+<style>
+:root{--paper:#f6f3ed;--white:#fffdfa;--ink:#292e27;--muted:#70756b;--sage:#687d60;--sage-light:#e8eee4;--line:#e3dfd5;--serif:Georgia,'Times New Roman',serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.7 Inter,Arial,sans-serif}
+.wrap{width:min(1120px,calc(100% - 44px));margin:auto}nav{height:76px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}
+.logo{font-size:16px;font-weight:800;letter-spacing:3px}.logo span{color:var(--sage)}.nav-note{font-size:10px;text-transform:uppercase;letter-spacing:1.8px;color:var(--muted)}
+.hero{padding:100px 0 90px;max-width:850px}.eyebrow,.kicker{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--sage)}
+h1,h2,h3{margin-top:0}h1{font:500 clamp(48px,7vw,82px)/1.04 var(--serif);letter-spacing:-2.5px;margin:20px 0}.accent{color:var(--sage);font-style:italic}.intro{font-size:18px;line-height:1.8;color:var(--muted);max-width:700px}
+.pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:28px}.pill{font-size:11px;border:1px solid #d8d9ce;background:var(--white);padding:7px 13px;border-radius:99px;color:#50594c}
+.section{padding:72px 0;border-top:1px solid var(--line)}.section-head{max-width:720px;margin-bottom:30px}h2{font:500 clamp(32px,4.4vw,47px)/1.13 var(--serif);letter-spacing:-.8px;margin:9px 0 12px}.muted{color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--white);border:1px solid var(--line);padding:28px;border-radius:4px}.panel h3{font:500 27px/1.2 var(--serif);margin:10px 0}.panel p{color:var(--muted);font-size:13px}.panel ul,.feature-list{padding-left:18px;color:#555d51;font-size:13px}.panel li,.feature-list li{padding:3px 0}
+.small-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--sage);font-weight:800}
+.sample{background:#f4f2ec;border:1px solid var(--line);padding:15px;margin-top:18px;font-size:12px}.sample strong{display:block;margin-bottom:9px}.msg{padding:8px 11px;background:#e9e8df;margin:6px 0;max-width:90%}.msg.reply{margin-left:auto;background:#e3ebdf}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:22px;background:var(--white);border:1px solid var(--line)}.card .num{font:italic 25px var(--serif);color:var(--sage)}.card h3{font:500 21px var(--serif);margin:7px 0}.card p{font-size:12px;color:var(--muted);margin:0}
+.admin{display:grid;grid-template-columns:1fr 1fr;gap:18px}.admin .panel{padding:24px}.admin h3{font-size:23px}
+.investment{background:var(--sage-light);border:1px solid #d5dfcf;padding:32px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.investment h2{margin:0 0 8px}.amount{font-size:clamp(28px,4vw,43px);font-weight:700;color:#4d6548;white-space:nowrap;letter-spacing:-1.5px}.amount small{display:block;font-size:9px;letter-spacing:1.4px;text-align:right;color:var(--muted);font-weight:600}
+.terms{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:13px}.term{background:var(--white);border:1px solid var(--line);padding:15px}.term b{display:block;color:var(--sage);font-size:10px;text-transform:uppercase;letter-spacing:1px}.term span{font-size:13px}
+.maintenance{margin-top:28px}.maintenance .investment{background:#f0ece3;border-color:#e0d9ca}.maintenance .amount{color:#7b6a4e}
+.note{font-size:11px;color:var(--muted);margin-top:16px}.cta{display:inline-block;margin-top:24px;background:var(--ink);color:white;text-decoration:none;padding:12px 19px;font-size:11px;letter-spacing:1px;text-transform:uppercase}
+footer{border-top:1px solid var(--line);padding:25px 0 38px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:11px}
+@media(max-width:760px){.hero{padding:70px 0}.grid2,.admin{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.investment{grid-template-columns:1fr}.amount small{text-align:left}.terms{grid-template-columns:1fr}}
+@media(max-width:520px){.wrap{width:calc(100% - 30px)}nav{height:64px}.nav-note{font-size:8px}.hero{padding:58px 0}.section{padding:52px 0}.cards{grid-template-columns:1fr}.panel{padding:22px}footer{flex-direction:column}}
+@media(prefers-reduced-motion:no-preference){.card,.panel,.cta{transition:transform .2s ease,box-shadow .2s ease}.card:hover,.panel:hover{transform:translateY(-3px);box-shadow:0 12px 28px #33320c0b}.cta:hover{background:var(--sage)}}
+</style>
+</head>
+<body><div class="wrap">
+<nav><div class="logo">VELTRIX<span>.</span></div><div class="nav-note">Website proposal · Skincare brand</div></nav>
+<header class="hero">
+<div class="eyebrow">A thoughtful digital storefront</div>
+<h1>A beautiful new home for <span class="accent">your skincare brand.</span></h1>
+<p class="intro">A premium online shopping experience that puts your products first. Designed to feel calm, polished and effortless — with practical tools that help your team serve customers and manage the store.</p>
+<div class="pills"><span class="pill">Custom e-commerce website</span><span class="pill">Personal shopping assistant</span><span class="pill">Business insights assistant</span><span class="pill">Admin dashboard</span></div>
+<a class="cta" href="#investment">View project investment</a>
+</header>
+
+<section class="section">
+<div class="section-head"><div class="kicker">01 · The shopping experience</div><h2>Designed around your products and customers.</h2><p class="muted">A clean, responsive storefront inspired by modern beauty and skincare brands, with a clear product journey from discovery to checkout.</p></div>
+<div class="cards">
+<article class="card"><div class="num">01</div><h3>Home page</h3><p>Brand introduction, campaign banners, featured collections, bestsellers, new arrivals and editorial content.</p></article>
+<article class="card"><div class="num">02</div><h3>Product catalogue</h3><p>Categories, search, filters, sorting and product cards with clear pricing and availability.</p></article>
+<article class="card"><div class="num">03</div><h3>Product details</h3><p>Product photography, ingredients, benefits, directions, skin-type information, variants and reviews.</p></article>
+<article class="card"><div class="num">04</div><h3>Cart & checkout</h3><p>Simple cart, customer details, delivery address, order summary and checkout flow.</p></article>
+<article class="card"><div class="num">05</div><h3>Customer accounts</h3><p>Guest checkout, account registration, saved addresses, order history and order status.</p></article>
+<article class="card"><div class="num">06</div><h3>Brand content</h3><p>About, contact, FAQs, shipping and return policies, social links and newsletter signup.</p></article>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="kicker">02 · Intelligent assistance</div><h2>Helpful AI, working quietly in the background.</h2><p class="muted">AI is included where it adds practical value — without making the website feel technical or overwhelming.</p></div>
+<div class="grid2">
+<article class="panel"><div class="small-label">For your customers</div><h3>A personal skincare shopping assistant.</h3><p>A bilingual chat assistant that helps visitors understand the range, find products and get answers while shopping.</p>
+<ul><li>Arabic and English support</li><li>Product discovery and recommendations</li><li>Ingredient, benefit and usage explanations</li><li>Routine suggestions based on customer preferences</li><li>Product comparisons and availability questions</li><li>Shipping, returns and order FAQs</li><li>Direct links to relevant products</li><li>Human support handover when needed</li><li>Knowledge base using approved brand information</li></ul>
+<div class="sample"><strong>Example conversation</strong><div class="msg">I'm looking for a light daily moisturiser.</div><div class="msg reply">I'd be happy to help. What is your skin type, and do you have any ingredient preferences?</div></div></article>
+<article class="panel"><div class="small-label">For your team</div><h3>A business insights assistant.</h3><p>An assistant inside the admin dashboard that answers questions about store performance and helps your team spot what needs attention.</p>
+<ul><li>Daily, weekly and monthly sales summaries</li><li>Revenue, order and product performance analysis</li><li>Best-selling and slow-moving product insights</li><li>Low-stock and out-of-stock alerts</li><li>Customer and order trends</li><li>Marketing, promotion and bundle suggestions</li><li>AI-generated business reports</li><li>Agent activity history and usage monitoring</li><li>Admin approval for sensitive actions</li></ul>
+<div class="sample"><strong>Example business summary</strong><div>Top-selling products · Inventory alerts · Sales overview · Suggested next steps</div></div></article>
+</div>
+<p class="note">AI guidance will be based on approved brand and product information. It will not provide medical diagnoses or make unsupported medical claims. Actions such as refunds, price changes and deleting records remain under administrator control.</p>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="kicker">03 · Store management</div><h2>Your day-to-day operations, in one place.</h2><p class="muted">A private admin dashboard for managing the website without needing a developer for routine updates.</p></div>
+<div class="admin">
+<div class="panel"><h3>Products & inventory</h3><ul><li>Add, edit and organise products and categories</li><li>Manage images, prices, variants and descriptions</li><li>Update stock levels and view low-stock alerts</li><li>Manage ingredients, benefits and product instructions</li></ul></div>
+<div class="panel"><h3>Orders & customers</h3><ul><li>View and process customer orders</li><li>Update order and delivery statuses</li><li>Access customer profiles and purchase history</li><li>Manage reviews, coupons and promotions</li></ul></div>
+<div class="panel"><h3>Website content</h3><ul><li>Update homepage banners and featured products</li><li>Manage FAQs, policies and brand content</li><li>Manage newsletter subscribers</li><li>Configure shipping and payment options</li></ul></div>
+<div class="panel"><h3>Reports & permissions</h3><ul><li>Sales, product and inventory reports</li><li>Export reports to Excel and PDF</li><li>Admin roles, permissions and activity history</li><li>AI assistant settings and conversation overview</li></ul></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="kicker">04 · Launch and support</div><h2>Prepared for a confident launch.</h2></div>
+<div class="cards">
+<article class="card"><div class="num">A</div><h3>Responsive design</h3><p>Carefully adapted for mobile, tablet and desktop screens.</p></article>
+<article class="card"><div class="num">B</div><h3>Search visibility</h3><p>SEO foundations, page metadata, structured content and clean page URLs.</p></article>
+<article class="card"><div class="num">C</div><h3>Testing & handover</h3><p>Core flow testing, deployment, administrator walkthrough and handover.</p></article>
+</div>
+</section>
+
+<section class="section" id="investment">
+<div class="section-head"><div class="kicker">05 · Project investment</div><h2>A complete e-commerce experience, built for your brand.</h2><p class="muted">The proposed development scope includes the storefront, admin dashboard, customer assistant and business insights assistant.</p></div>
+<div class="investment"><div><h2>Website design & development</h2><div class="muted">Custom storefront · E-commerce · Admin dashboard · AI assistants</div></div><div class="amount">EGP 35,000–38,000<small>ONE-TIME DEVELOPMENT FEE</small></div></div>
+<div class="terms"><div class="term"><b>Estimated timeline</b><span>5–7 weeks</span></div><div class="term"><b>Payment schedule</b><span>50% · 30% · 20%</span></div><div class="term"><b>After launch</b><span>30-day bug-fix period</span></div></div>
+<div class="maintenance"><div class="investment"><div><div class="kicker">Optional after-launch care</div><h2>Three-month maintenance package</h2><p class="muted">Bug fixes, routine website checks, compatible security updates, database and integration checks, AI assistant support, minor content updates and technical assistance.</p></div><div class="amount">EGP 8,000<small>FOR 3 MONTHS</small></div></div></div>
+<p class="note">If both services are selected, the combined project and maintenance investment is EGP 43,000–46,000. Maintenance is optional and excludes new features, redesigns and major changes. Domain, hosting, AI API usage, payment gateway and WhatsApp provider fees or other third-party subscriptions are separate. Support hours, response times and minor request limits will be agreed before maintenance begins. Final scope and payment milestones will be confirmed in writing.</p>
+</section>
+<footer><span><strong>VELTRIX.</strong> · Website development proposal</span><span>Prepared for your skincare brand</span></footer>
+</div></body></html>
