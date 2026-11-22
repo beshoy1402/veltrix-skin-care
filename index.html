@@ -2,30 +2,30 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f6f3ed">
+<meta name="theme-color" content="#f4f7f2">
 <title>VELTRIX — Skincare E-commerce Proposal</title>
 <style>
-:root{--paper:#f6f3ed;--white:#fffdfa;--ink:#292e27;--muted:#70756b;--sage:#687d60;--sage-light:#e8eee4;--line:#e3dfd5;--serif:Georgia,'Times New Roman',serif}
+:root{--paper:#f4f7f2;--white:#fcfefb;--ink:#172a20;--muted:#68766c;--sage:#285b3f;--sage-light:#e1eee3;--line:#d8e3d9;--serif:Georgia,'Times New Roman',serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.7 Inter,Arial,sans-serif}
 .wrap{width:min(1120px,calc(100% - 44px));margin:auto}nav{height:76px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}
 .logo{font-size:16px;font-weight:800;letter-spacing:3px}.logo span{color:var(--sage)}.nav-note{font-size:10px;text-transform:uppercase;letter-spacing:1.8px;color:var(--muted)}
 .hero{padding:100px 0 90px;max-width:850px}.eyebrow,.kicker{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--sage)}
 h1,h2,h3{margin-top:0}h1{font:500 clamp(48px,7vw,82px)/1.04 var(--serif);letter-spacing:-2.5px;margin:20px 0}.accent{color:var(--sage);font-style:italic}.intro{font-size:18px;line-height:1.8;color:var(--muted);max-width:700px}
-.pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:28px}.pill{font-size:11px;border:1px solid #d8d9ce;background:var(--white);padding:7px 13px;border-radius:99px;color:#50594c}
+.pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:28px}.pill{font-size:11px;border:1px solid #d8d9ce;background:var(--white);padding:7px 13px;border-radius:99px;color:#355641}
 .section{padding:72px 0;border-top:1px solid var(--line)}.section-head{max-width:720px;margin-bottom:30px}h2{font:500 clamp(32px,4.4vw,47px)/1.13 var(--serif);letter-spacing:-.8px;margin:9px 0 12px}.muted{color:var(--muted)}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--white);border:1px solid var(--line);padding:28px;border-radius:4px}.panel h3{font:500 27px/1.2 var(--serif);margin:10px 0}.panel p{color:var(--muted);font-size:13px}.panel ul,.feature-list{padding-left:18px;color:#555d51;font-size:13px}.panel li,.feature-list li{padding:3px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--white);border:1px solid var(--line);padding:28px;border-radius:4px}.panel h3{font:500 27px/1.2 var(--serif);margin:10px 0}.panel p{color:var(--muted);font-size:13px}.panel ul,.feature-list{padding-left:18px;color:#3e5947;font-size:13px}.panel li,.feature-list li{padding:3px 0}
 .small-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--sage);font-weight:800}
-.sample{background:#f4f2ec;border:1px solid var(--line);padding:15px;margin-top:18px;font-size:12px}.sample strong{display:block;margin-bottom:9px}.msg{padding:8px 11px;background:#e9e8df;margin:6px 0;max-width:90%}.msg.reply{margin-left:auto;background:#e3ebdf}
+.sample{background:#edf3ed;border:1px solid var(--line);padding:15px;margin-top:18px;font-size:12px}.sample strong{display:block;margin-bottom:9px}.msg{padding:8px 11px;background:#e6eee6;margin:6px 0;max-width:90%}.msg.reply{margin-left:auto;background:#dcebdd}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:22px;background:var(--white);border:1px solid var(--line)}.card .num{font:italic 25px var(--serif);color:var(--sage)}.card h3{font:500 21px var(--serif);margin:7px 0}.card p{font-size:12px;color:var(--muted);margin:0}
 .admin{display:grid;grid-template-columns:1fr 1fr;gap:18px}.admin .panel{padding:24px}.admin h3{font-size:23px}
-.investment{background:var(--sage-light);border:1px solid #d5dfcf;padding:32px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.investment h2{margin:0 0 8px}.amount{font-size:clamp(28px,4vw,43px);font-weight:700;color:#4d6548;white-space:nowrap;letter-spacing:-1.5px}.amount small{display:block;font-size:9px;letter-spacing:1.4px;text-align:right;color:var(--muted);font-weight:600}
+.investment{background:var(--sage-light);border:1px solid #d5dfcf;padding:32px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.investment h2{margin:0 0 8px}.amount{font-size:clamp(28px,4vw,43px);font-weight:700;color:#17482f;white-space:nowrap;letter-spacing:-1.5px}.amount small{display:block;font-size:9px;letter-spacing:1.4px;text-align:right;color:var(--muted);font-weight:600}
 .terms{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:13px}.term{background:var(--white);border:1px solid var(--line);padding:15px}.term b{display:block;color:var(--sage);font-size:10px;text-transform:uppercase;letter-spacing:1px}.term span{font-size:13px}
-.maintenance{margin-top:28px}.maintenance .investment{background:#f0ece3;border-color:#e0d9ca}.maintenance .amount{color:#7b6a4e}
+.maintenance{margin-top:28px}.maintenance .investment{background:#e9f0e8;border-color:#d3e0d3}.maintenance .amount{color:#285b3f}
 .note{font-size:11px;color:var(--muted);margin-top:16px}.cta{display:inline-block;margin-top:24px;background:var(--ink);color:white;text-decoration:none;padding:12px 19px;font-size:11px;letter-spacing:1px;text-transform:uppercase}
 footer{border-top:1px solid var(--line);padding:25px 0 38px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:11px}
 @media(max-width:760px){.hero{padding:70px 0}.grid2,.admin{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.investment{grid-template-columns:1fr}.amount small{text-align:left}.terms{grid-template-columns:1fr}}
 @media(max-width:520px){.wrap{width:calc(100% - 30px)}nav{height:64px}.nav-note{font-size:8px}.hero{padding:58px 0}.section{padding:52px 0}.cards{grid-template-columns:1fr}.panel{padding:22px}footer{flex-direction:column}}
-@media(prefers-reduced-motion:no-preference){.card,.panel,.cta{transition:transform .2s ease,box-shadow .2s ease}.card:hover,.panel:hover{transform:translateY(-3px);box-shadow:0 12px 28px #33320c0b}.cta:hover{background:var(--sage)}}
+@media(prefers-reduced-motion:no-preference){.card,.panel,.cta{transition:transform .2s ease,box-shadow .2s ease}.card:hover,.panel:hover{transform:translateY(-3px);box-shadow:0 12px 28px #33320c0b}.cta:hover{background:#39734f}}
 </style>
 </head>
 <body><div class="wrap">
